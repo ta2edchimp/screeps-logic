@@ -9,7 +9,7 @@ function cleanup() {
 
 function creepHandler(creep) {
   if (creep.carry.energy === 0 ||
-    (creep.carry.energy < creep.carryCapacity && creep.memory.job === 'harvesting')) {
+    (creep.carry.energy < creep.carryCapacity && creep.memory.job === 'harvest')) {
     let source = Game.getObjectById(creep.memory.sourceId);
 
     if (!source) {
