@@ -25,7 +25,7 @@ function creepHandler(creep) {
     return;
   }
 
-  if (creep.memory.role === 'harvester') {
+  if (creep.memory.role === 'harvester' || creep.memory.role === 'henchman') {
     const structure = creep.pos.findClosestByPath(
       FIND_MY_STRUCTURES,
       { filter({ structureType, energy, energyCapacity }) {
